@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Mangalore Azan Timings</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <header>
+            <h1>MANGALORE AZAN TIMINGS</h1>
+        </header>
+
+        <div class="container">
+            <div class="main-card">
+
+                <!-- Date + Calendar -->
+                <div class="date-container">
+                    <label id="dateLabel"></label>
+                    <input type="date" id="datePicker">
+                    <span class="calendar-icon" onclick="openCalendar()">📅</span>
+                </div>
+
+                <div class="prayer-item">
+                    <div class="name">Subah</div>
+                    <div class="time" id="subahTime">Loading...</div>
+                </div>
+
+                <div class="prayer-item">
+                    <div class="name">Luhr</div>
+                    <div class="time" id="luhrTime">Loading...</div>
+                </div>
+
+                <div class="prayer-item">
+                    <div class="name">Asar Shafi</div>
+                    <div class="time" id="asarShafiTime">Loading...</div>
+                </div>
+
+                <div class="prayer-item">
+                    <div class="name">Asar Hanafi</div>
+                    <div class="time" id="asarHanafiTime">Loading...</div>
+                </div>
+
+                <div class="prayer-item">
+                    <div class="name">Maghrib</div>
+                    <div class="time" id="maghribTime">Loading...</div>
+                </div>
+
+                <div class="prayer-item">
+                    <div class="name">Isha Shafi</div>
+                    <div class="time" id="ishaShafiTime">Loading...</div>
+                </div>
+
+                <div class="prayer-item">
+                    <div class="name">Isha Hanafi</div>
+                    <div class="time" id="ishaHanafiTime">Loading...</div>
+                </div>
+
+                <div class="prayer-item">
+                    <div class="name">Sunrise</div>
+                    <div class="time" id="sunriseTime">Loading...</div>
+                </div>
+
+                <div class="button-container">
+                    <button onclick="showPreviousDay()" class="button-previous">Previous</button>
+                    <button onclick="showNextDay()" class="button-next">Next</button>
+                </div>
+
+                <div class="image-container">
+                    <img src="sample.png" alt="Special Offer Poster">
+                </div>
+
+            </div>
+        </div>
+
+        <script src="timingdata.js" defer></script>
+        <script src="jsfunction.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+        <div id="contact" class="contact-section">
+            <h2>Contact</h2>
+
+            <form id="contact-form" class="contact-form">
+
+                <label>Name:</label>
+                <input type="text" name="name" required>
+
+                <label>Email:</label>
+                <input type="email" name="email" required>
+
+                <label>Ph no:</label>
+                <input type="tel" name="phone" required>
+
+                <label>Reason for contact:</label>
+                <textarea name="reason" rows="4" required></textarea>
+
+                <button type="submit">Send</button>
+
+            </form>
+            
+            <p id="success-message" style="display:none; color:green;">
+            Message sent successfully.
+            </p>
+
+        </div>
+
+        <footer>
+
+            <p>© 2026 Mangalore Azan Timings</p>
+            <p class="footer-note">Built with care.</p>
+
+        </footer>
+
+    </body>
+</html>
