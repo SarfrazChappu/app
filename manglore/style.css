@@ -232,6 +232,27 @@ opacity: 0.8;
     font-weight: 600;
 }
 
+.whatsapp-channel-btn {
+    display: block;
+    width: 100%;
+    background: #25D366;
+    color: white;
+    padding: 14px;
+    border-radius: 12px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+    margin-top: 15px;
+    text-align: center;
+    transition: 0.25s ease;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.whatsapp-channel-btn:hover {
+    background: #1ebe5d;
+    transform: translateY(-2px);
+}
+
 /* Mobile Optimization */
 @media (max-width: 600px) {
     header h1 {
