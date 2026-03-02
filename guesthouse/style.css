@@ -1,9 +1,16 @@
 /* ------ General Styles ------ */
+html {
+  height: 100%;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 .containeri {
@@ -370,76 +377,4 @@ form button[type="reset"]:hover {
   .services-grid {
       grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
-}
-
-/* aboutus */
-/* Header Section */
-.about-header {
-  background-color: #2d572c;
-  color: white;
-  padding: 20px;
-  text-align: center;
-}
-.about-header p {
-  font-size: 1.2em;
-  margin-top: 10px;
-}
-
-/* Founders Section */
-.founders-section {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-  background: #ffffff;
-}
-.founder {
-  text-align: center;
-  max-width: 250px;
-}
-.founder img {
-  width: 100%;
-  border-radius: 10px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-.founder h3 {
-  margin: 10px 0 5px;
-}
-.founder p {
-  color: #666;
-}
-
-/* Journey Section */
-.journey-section, .values-section {
-  background: #e8f5e9;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  border-radius: 8px;
-}
-.journey-section h2, .values-section h2 {
-  border-bottom: 2px solid #2d572c;
-  display: inline-block;
-  padding-bottom: 5px;
-}
-
-/* Contact Section */
-.contact-section {
-  background: #ffffff;
-  padding: 20px;
-  margin: 20px auto;
-  max-width: 800px;
-  text-align: center;
-}
-.contact-section h2 {
-  margin-bottom: 10px;
-}
-.contact-section address {
-  font-style: normal;
-  line-height: 1.8;
-}
-.contact-section iframe {
-  margin-top: 15px;
-  border: none;
 }
