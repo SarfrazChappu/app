@@ -304,6 +304,20 @@ footer{
     opacity:0.8;
 }
 
+.install-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#004d00;
+    color:white;
+    border:none;
+    padding:12px 20px;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+    box-shadow:0 4px 10px rgba(0,0,0,0.3);
+}
+
 /* Mobile Optimization */
 @media (max-width:600px){
 
