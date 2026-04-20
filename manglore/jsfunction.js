@@ -163,7 +163,7 @@ if(isToday(currentDate) && isAfterMaghrib()){
 }
 
 /* manual Saudi → local adjustment */
-const hijriOffset = 0; // change to -1, 0, or +1 if needed
+const hijriOffset = -1; // change to -1, 0, or +1 if needed
 hijriDate.setDate(hijriDate.getDate() + hijriOffset);
 
 const day = hijriDate.getDate();
